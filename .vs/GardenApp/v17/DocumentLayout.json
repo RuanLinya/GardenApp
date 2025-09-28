@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GardenApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|c:\\gardenapp\\gardenapp\\platforms\\windows\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|solutionrelative:gardenapp\\platforms\\windows\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|c:\\gardenapp\\gardenapp\\platforms\\windows\\app.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|solutionrelative:gardenapp\\platforms\\windows\\app.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|c:\\gardenapp\\gardenapp\\global.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|solutionrelative:gardenapp\\global.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|c:\\gardenapp\\gardenapp\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|solutionrelative:gardenapp\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|c:\\gardenapp\\gardenapp\\platforms\\windows\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|solutionrelative:gardenapp\\platforms\\windows\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|c:\\gardenapp\\gardenapp\\mainpage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|solutionrelative:gardenapp\\mainpage.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|c:\\gardenapp\\gardenapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|solutionrelative:gardenapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|c:\\gardenapp\\gardenapp\\app.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|solutionrelative:gardenapp\\app.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|c:\\gardenapp\\gardenapp\\gardenapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A47CFE2C-29EA-3E6B-727B-F45546AA26A3}|GardenApp\\GardenApp.csproj|solutionrelative:gardenapp\\gardenapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\GardenApp\\GardenApp\\Platforms\\Windows\\App.xaml.cs",
+              "RelativeDocumentMoniker": "GardenApp\\Platforms\\Windows\\App.xaml.cs",
+              "ToolTip": "C:\\GardenApp\\GardenApp\\Platforms\\Windows\\App.xaml.cs",
+              "RelativeToolTip": "GardenApp\\Platforms\\Windows\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T18:43:39.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\GardenApp\\GardenApp\\Platforms\\Windows\\App.xaml",
+              "RelativeDocumentMoniker": "GardenApp\\Platforms\\Windows\\App.xaml",
+              "ToolTip": "C:\\GardenApp\\GardenApp\\Platforms\\Windows\\App.xaml",
+              "RelativeToolTip": "GardenApp\\Platforms\\Windows\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-28T18:43:15.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "global.json",
+              "DocumentMoniker": "C:\\GardenApp\\GardenApp\\global.json",
+              "RelativeDocumentMoniker": "GardenApp\\global.json",
+              "ToolTip": "C:\\GardenApp\\GardenApp\\global.json",
+              "RelativeToolTip": "GardenApp\\global.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-28T18:38:38.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\GardenApp\\GardenApp\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "GardenApp\\Shared\\MainLayout.razor",
+              "ToolTip": "C:\\GardenApp\\GardenApp\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "GardenApp\\Shared\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-28T18:33:48.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.cs",
+              "DocumentMoniker": "C:\\GardenApp\\GardenApp\\Platforms\\Windows\\MainWindow.cs",
+              "RelativeDocumentMoniker": "GardenApp\\Platforms\\Windows\\MainWindow.cs",
+              "ToolTip": "C:\\GardenApp\\GardenApp\\Platforms\\Windows\\MainWindow.cs",
+              "RelativeToolTip": "GardenApp\\Platforms\\Windows\\MainWindow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T18:33:35.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\GardenApp\\GardenApp\\MainPage.xaml",
+              "RelativeDocumentMoniker": "GardenApp\\MainPage.xaml",
+              "ToolTip": "C:\\GardenApp\\GardenApp\\MainPage.xaml",
+              "RelativeToolTip": "GardenApp\\MainPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-28T18:33:24.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\GardenApp\\GardenApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "GardenApp\\App.xaml.cs",
+              "ToolTip": "C:\\GardenApp\\GardenApp\\App.xaml.cs",
+              "RelativeToolTip": "GardenApp\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T18:33:03.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\GardenApp\\GardenApp\\App.xaml",
+              "RelativeDocumentMoniker": "GardenApp\\App.xaml",
+              "ToolTip": "C:\\GardenApp\\GardenApp\\App.xaml",
+              "RelativeToolTip": "GardenApp\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-28T18:32:41.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GardenApp.csproj",
+              "DocumentMoniker": "C:\\GardenApp\\GardenApp\\GardenApp.csproj",
+              "RelativeDocumentMoniker": "GardenApp\\GardenApp.csproj",
+              "ToolTip": "C:\\GardenApp\\GardenApp\\GardenApp.csproj",
+              "RelativeToolTip": "GardenApp\\GardenApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-28T18:29:06.77Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

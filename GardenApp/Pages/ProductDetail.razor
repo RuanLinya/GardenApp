@@ -1,0 +1,59 @@
+@page "/product/{id:int}"
+@inject ProductService ProductService
+@inject CartService CartService
+@inject NavigationManager NavManager
+
+<div class="product-detail-page" >
+    @if (product == null)
+    {
+        <p>Loading...</p>
+    }
+    else
+    {
+        <!-- Use a named handler to avoid nested quotes in the attribute -->
+        <button class="back-btn" @onclick="GoBack">← Back</button>
+        <div class="detail-header">
+            <img src="@product.Image" alt="@product.Name" class="detail-image" />
+        </div>
+        <div class="detail-content">
+            <h2 class="detail-title">@product.Name</h2>
+            <div class="detail-rating">
+                <img src="assets/icon_star.png" alt="Rating" class="star-icon" />
+                <span>@product.Rating.ToString("0.0")</span>
+            </div>
+            <p class="detail-description">@product.Description</p>
+            <div class="detail-price">@product.Price.ToString("C")</div>
+            <button class="primary-btn add-cart-btn" @onclick="AddProduct">Add to Cart</button>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter] public int id { get; set; }
+    private Product? product;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        product = await ProductService.GetProductByIdAsync(id);
+    }
+
+    private void AddProduct()
+    {
+        if (product != null)
+        {
+            CartService.AddToCart(product);
+        }
+    }
+
+    private void GoBack()
+    {
+        if (NavManager.Uri.Contains("/home", System.StringComparison.OrdinalIgnoreCase))
+        {
+            NavManager.NavigateTo("/home");
+        }
+        else
+        {
+            NavManager.NavigateTo("/");
+        }
+    }
+}

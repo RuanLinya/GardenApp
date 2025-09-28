@@ -1,0 +1,76 @@
+@page "/home"
+@inject ProductService ProductService
+@inject CartService CartService
+@inject NavigationManager NavManager
+
+<div class="home-page">
+    <!-- Search bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search plants" @bind="searchTerm" class="search-input" />
+    </div>
+
+    <!-- Categories section -->
+    <div class="categories">
+        @foreach (var cat in categories)
+        {
+            <button class="category-item" @onclick="() => OpenCategory(cat.Name)">
+                <img src="@cat.Icon" alt="@cat.Name" class="category-icon" />
+                <span class="category-name">@cat.Name</span>
+            </button>
+        }
+    </div>
+
+    <!-- Trending section -->
+    <h2 class="section-title">Trending</h2>
+    <div class="trending-list">
+        @foreach (var prod in FilteredTrending)
+        {
+            <ProductCard Product="prod" OnAddToCart="AddToCart" OnToggleFavourite="ToggleFavourite" />
+        }
+    </div>
+</div>
+
+@code {
+    private string searchTerm = string.Empty;
+    private List<Product> trending = new();
+
+    private readonly List<CategoryItem> categories = new()
+    {
+        new CategoryItem { Name = "Bonsai", Icon = "assets/icon_bonsai.png" },
+        new CategoryItem { Name = "Succulent", Icon = "assets/icon_succulent.png" },
+        new CategoryItem { Name = "Cactus", Icon = "assets/icon_cactus.png" },
+        new CategoryItem { Name = "Grass", Icon = "assets/icon_succulent.png" } // reuse icon for grass
+    };
+
+    protected override async Task OnInitializedAsync()
+    {
+        trending = await ProductService.GetTrendingAsync();
+    }
+
+    private IEnumerable<Product> FilteredTrending
+        => string.IsNullOrWhiteSpace(searchTerm)
+            ? trending
+            : trending.Where(p => p.Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase));
+
+    private void OpenCategory(string category)
+    {
+        NavManager.NavigateTo($"/category/{category}");
+    }
+
+    private async Task AddToCart(Product product)
+    {
+        CartService.AddToCart(product);
+        await Task.CompletedTask;
+    }
+
+    private async Task ToggleFavourite(Product product)
+    {
+        await Task.CompletedTask;
+    }
+
+    private class CategoryItem
+    {
+        public string Name { get; set; } = string.Empty;
+        public string Icon { get; set; } = string.Empty;
+    }
+}

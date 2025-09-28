@@ -1,0 +1,56 @@
+@page "/cart"
+@inject CartService CartService
+
+<div class="cart-page">
+    <h2 class="section-title">Cart</h2>
+    @if (CartService.Items.Count == 0)
+    {
+        <p>Your cart is empty.</p>
+    }
+    else
+    {
+        <div class="cart-items">
+            @foreach (var item in CartService.Items)
+            {
+                <div class="cart-item">
+                    <img src="@item.Product.Image" alt="@item.Product.Name" class="cart-item-image" />
+                    <div class="cart-item-details">
+                        <div class="cart-item-name">@item.Product.Name</div>
+                        <div class="cart-item-price">@item.Product.Price.ToString("C")</div>
+                    </div>
+                    <div class="cart-qty">
+                        <button class="qty-btn" @onclick="() => Decrement(item.Product)">
+                            <img src="assets/icon_minus.png" alt="minus" class="qty-icon" />
+                        </button>
+                        <span class="qty-text">@item.Quantity</span>
+                        <button class="qty-btn" @onclick="() => Increment(item.Product)">
+                            <img src="assets/icon_plus.png" alt="plus" class="qty-icon" />
+                        </button>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="cart-summary">
+            <div class="subtotal-label">Subtotal</div>
+            <div class="subtotal-value">@CartService.GetSubtotal().ToString("C")</div>
+        </div>
+        <button class="primary-btn checkout-btn" disabled>Checkout</button>
+    }
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        CartService.OnChange += StateHasChanged;
+    }
+
+    private void Increment(Product product)
+    {
+        CartService.IncrementQuantity(product);
+    }
+
+    private void Decrement(Product product)
+    {
+        CartService.DecrementQuantity(product);
+    }
+}

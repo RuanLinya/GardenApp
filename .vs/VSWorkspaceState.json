@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\GardenApp",
+    "\\GardenApp\\obj",
+    "\\GardenApp\\Pages",
+    "\\GardenApp\\Platforms",
+    "\\GardenApp\\Platforms\\Android",
+    "\\GardenApp\\Platforms\\iOS",
+    "\\GardenApp\\Platforms\\MacCatalyst",
+    "\\GardenApp\\Platforms\\Windows",
+    "\\GardenApp\\Shared"
+  ],
+  "SelectedNode": "\\GardenApp.sln",
+  "PreviewInSolutionExplorer": false
+}

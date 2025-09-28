@@ -1,0 +1,101 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\Garden.jpeg",
+      "PackagePath": "staticwebassets\\assets\\Garden.jpeg"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\blue_cactus.png",
+      "PackagePath": "staticwebassets\\assets\\blue_cactus.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\bonsai_large.png",
+      "PackagePath": "staticwebassets\\assets\\bonsai_large.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\bonsai_small.png",
+      "PackagePath": "staticwebassets\\assets\\bonsai_small.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\happy_succulent.png",
+      "PackagePath": "staticwebassets\\assets\\happy_succulent.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\haworthia_succulent.png",
+      "PackagePath": "staticwebassets\\assets\\haworthia_succulent.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\icon_bonsai.png",
+      "PackagePath": "staticwebassets\\assets\\icon_bonsai.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\icon_cactus.png",
+      "PackagePath": "staticwebassets\\assets\\icon_cactus.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\icon_cart.png",
+      "PackagePath": "staticwebassets\\assets\\icon_cart.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\icon_cart_add.png",
+      "PackagePath": "staticwebassets\\assets\\icon_cart_add.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\icon_heart.png",
+      "PackagePath": "staticwebassets\\assets\\icon_heart.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\icon_home.png",
+      "PackagePath": "staticwebassets\\assets\\icon_home.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\icon_minus.png",
+      "PackagePath": "staticwebassets\\assets\\icon_minus.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\icon_plus.png",
+      "PackagePath": "staticwebassets\\assets\\icon_plus.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\icon_star.png",
+      "PackagePath": "staticwebassets\\assets\\icon_star.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\icon_succulent.png",
+      "PackagePath": "staticwebassets\\assets\\icon_succulent.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\assets\\yellow_grass.png",
+      "PackagePath": "staticwebassets\\assets\\yellow_grass.png"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\GardenApp\\GardenApp\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.GardenApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.GardenApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.build.GardenApp.props",
+      "PackagePath": "build\\GardenApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildMultiTargeting.GardenApp.props",
+      "PackagePath": "buildMultiTargeting\\GardenApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\staticwebassets\\msbuild.buildTransitive.GardenApp.props",
+      "PackagePath": "buildTransitive\\GardenApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,54 @@
+@page "/category/{categoryName}"
+@inject ProductService ProductService
+@inject CartService CartService
+@inject NavigationManager NavManager
+
+<div class="product-list-page">
+    <h2 class="section-title">@Title</h2>
+    <div class="product-grid">
+        @if (products == null)
+        {
+            <p>Loading...</p>
+        }
+        else if (products.Count == 0)
+        {
+            <p>No products found.</p>
+        }
+        else
+        {
+            @foreach (var prod in products)
+            {
+                <ProductCard Product="prod" OnAddToCart="AddToCart" OnToggleFavourite="ToggleFavourite" />
+            }
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter] public string? categoryName { get; set; }
+    private List<Product>? products;
+    private string Title => string.IsNullOrWhiteSpace(categoryName) ? "Products" : $"{categoryName} Plants";
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (!string.IsNullOrWhiteSpace(categoryName))
+        {
+            products = await ProductService.GetByCategoryAsync(categoryName);
+        }
+        else
+        {
+            products = await ProductService.GetProductsAsync();
+        }
+    }
+
+    private async Task AddToCart(Product product)
+    {
+        CartService.AddToCart(product);
+        await Task.CompletedTask;
+    }
+
+    private async Task ToggleFavourite(Product product)
+    {
+        await Task.CompletedTask;
+    }
+}

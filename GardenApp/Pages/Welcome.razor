@@ -1,0 +1,20 @@
+@page "/"
+@inject NavigationManager NavManager
+
+<div class="welcome-page gradient-bg">
+    <div class="welcome-content">
+        <h1 class="welcome-title">Welcome to GardenApp</h1>
+        <p class="welcome-subtitle">Grow your green journey with our curated selection of plants.</p>
+        <button class="primary-btn" @onclick="NavigateHome">Get Started</button>
+    </div>
+    <div class="hero-image">
+        <img src="assets/Garden.jpeg" alt="Hero plant" />
+    </div>
+</div>
+
+@code {
+    private void NavigateHome()
+    {
+        NavManager.NavigateTo("/home");
+    }
+}

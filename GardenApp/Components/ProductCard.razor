@@ -1,0 +1,52 @@
+@using GardenApp.Data
+@inject NavigationManager NavManager
+
+<div class="product-card" @onclick="() => OpenDetails(Product.Id)">
+    <div class="image-container">
+        <img src="@Product.Image" alt="@Product.Name" />
+        <button class="favourite-btn" @onclick:stopPropagation="true" @onclick="ToggleFavourite">
+            <img src="assets/icon_heart.png" alt="Favourite" class="favourite-icon" style="opacity:@(isFavourite ? 1 : 0.3)" />
+        </button>
+    </div>
+    <div class="card-content">
+        <div class="product-name">@Product.Name</div>
+        <div class="product-price">@Product.Price.ToString("C")</div>
+        <div class="rating">
+            <img src="assets/icon_star.png" alt="Rating" class="star-icon" />
+            <span class="rating-text">@Product.Rating.ToString("0.0")</span>
+        </div>
+    </div>
+    <button class="add-to-cart" @onclick:stopPropagation="true" @onclick="AddProduct">
+        <img src="assets/icon_cart_add.png" alt="Add" />
+    </button>
+</div>
+
+@code {
+    [Parameter] public Product Product { get; set; } = default!;
+    [Parameter] public EventCallback<Product> OnAddToCart { get; set; }
+    [Parameter] public EventCallback<Product> OnToggleFavourite { get; set; }
+
+    private bool isFavourite;
+
+    private void OpenDetails(int id)
+    {
+        NavManager.NavigateTo($"/product/{id}");
+    }
+
+    private async Task AddProduct()
+    {
+        if (OnAddToCart.HasDelegate)
+        {
+            await OnAddToCart.InvokeAsync(Product);
+        }
+    }
+
+    private async Task ToggleFavourite()
+    {
+        isFavourite = !isFavourite;
+        if (OnToggleFavourite.HasDelegate)
+        {
+            await OnToggleFavourite.InvokeAsync(Product);
+        }
+    }
+}

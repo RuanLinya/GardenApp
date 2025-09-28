@@ -1,0 +1,46 @@
+@inherits LayoutComponentBase
+@inject NavigationManager NavManager
+@inject CartService CartService
+
+
+<div class="main-layout">
+    <div class="body-content">
+        @Body
+    </div>
+    <nav class="bottom-nav">
+        <button class="nav-item" @onclick="NavigateHome">
+            <img src="assets/icon_home.png" alt="Home" class="nav-icon" />
+            <span class="nav-label">Home</span>
+        </button>
+        <button class="nav-item" @onclick="NavigateCart">
+            <div class="cart-icon-container">
+                <img src="assets/icon_cart.png" alt="Cart" class="nav-icon" />
+                @if (CartService.ItemCount > 0)
+                {
+                    <span class="badge">@CartService.ItemCount</span>
+                }
+            </div>
+            <span class="nav-label">Cart</span>
+        </button>
+    </nav>
+</div>
+
+@code {
+    private void NavigateTo(string url)
+    {
+        if (!NavManager.Uri.EndsWith(url, System.StringComparison.OrdinalIgnoreCase))
+        {
+            NavManager.NavigateTo(url);
+        }
+    }
+
+    private void NavigateHome()
+    {
+        NavigateTo("/home");
+    }
+
+    private void NavigateCart()
+    {
+        NavigateTo("/cart");
+    }
+}
